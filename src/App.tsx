@@ -54,7 +54,7 @@ function App() {
             onClick={handleTranslate}
             disabled={loading || !(input || output)}
             icon={Globe}
-            label="Translate (ES → FR)"
+            label="Translate (EN -> JA)"
             color="green"
             isActive={activeAction === 'translate'}
           />

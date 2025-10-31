@@ -55,7 +55,7 @@ export function useAIActions() {
 
   const translate = (text: string, onSuccess: (result: string) => void) => {
     return executeAction(
-      () => aiService.translate(text, 'es'),
+      () => aiService.translate(text, 'en'),
       'translate',
       '🌍 Translating...',
       onSuccess

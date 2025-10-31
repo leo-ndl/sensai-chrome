@@ -41,14 +41,14 @@ class AIServiceImpl implements AIService {
     return this.executePrompt("Rewrite this in a simpler, beginner-friendly way", text);
   }
 
-  async translate(text: string, sourceLang: string = 'es'): Promise<string> {
+  async translate(text: string, sourceLang: string = 'en'): Promise<string> {
     if (!('Translator' in self)) {
       throw new Error("Translator not available");
     }
 
     const translator = await Translator.create({
       sourceLanguage: sourceLang,
-      targetLanguage: 'es',
+      targetLanguage: 'ja',
       monitor(m: any) {
         m.addEventListener('downloadprogress', (e: ProgressEvent) => {
           console.log(`Downloaded ${e.loaded * 100}%`);
