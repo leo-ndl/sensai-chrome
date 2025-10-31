@@ -57,7 +57,6 @@ Technologies used:
 1. Clone the repository:
    ```bash
    git clone https://github.com/leo-ndl/sensai-chrome.git
-  ```
 
 ## 🏆 Built for Google Chrome AI Hackathon 2025
 
