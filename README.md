@@ -52,11 +52,53 @@ Technologies used:
 
 ---
 
+Here is a **cleaner, clearer, step-by-step “Install & Test” section** you can paste directly into your README:
+
+---
+
 ## 💻 Installation (Developer Mode)
 
-1. Clone the repository:
+Follow these steps to install and test the extension locally:
+
+1. **Clone the repository**
+
    ```bash
    git clone https://github.com/leo-ndl/sensai-chrome.git
+   cd sensai-chrome
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Build the extension**
+
+   ```bash
+   npm run build
+   ```
+
+   This will generate a `dist/` folder containing the production build used by Chrome.
+
+4. **Load the extension in Chrome**
+
+   1. Open Chrome and go to:
+
+      ```
+      chrome://extensions
+      ```
+   2. Enable **Developer Mode** (top right toggle).
+   3. Click **Load unpacked**.
+   4. Select the **`dist/`** folder from this project.
+
+5. **Test the extension**
+
+   * Highlight any text on a webpage.
+   * Right-click → **Explain This**
+   * The popup will open and you can try **Explain**, **Simplify**, or **Translate**.
+
+
 
 ## 🏆 Built for Google Chrome AI Hackathon 2025
 
