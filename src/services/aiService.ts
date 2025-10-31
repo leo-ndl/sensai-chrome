@@ -34,7 +34,7 @@ class AIServiceImpl implements AIService {
   }
 
   async explain(text: string): Promise<string> {
-    return this.executePrompt("Explain this code in simple terms", text);
+    return this.executePrompt("Explain this code or text in simple terms", text);
   }
 
   async simplify(text: string): Promise<string> {
