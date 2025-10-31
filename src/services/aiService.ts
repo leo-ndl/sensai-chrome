@@ -48,7 +48,7 @@ class AIServiceImpl implements AIService {
 
     const translator = await Translator.create({
       sourceLanguage: sourceLang,
-      targetLanguage: 'fr',
+      targetLanguage: 'es',
       monitor(m: any) {
         m.addEventListener('downloadprogress', (e: ProgressEvent) => {
           console.log(`Downloaded ${e.loaded * 100}%`);
