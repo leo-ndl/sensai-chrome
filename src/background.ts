@@ -3,7 +3,7 @@
 chrome.runtime.onInstalled.addListener(()=>{
     chrome.contextMenus.create({
         id: "explain-code",
-        title: "Explain with SensAI",
+        title: "Explain This",
         contexts: ["selection"]
     });
 });
