@@ -56,7 +56,7 @@ class AIServiceImpl implements AIService {
       },
     });
 
-    return await translator.translate(text, sourceLang);
+    return await translator.translate(text);
   }
 }
 
